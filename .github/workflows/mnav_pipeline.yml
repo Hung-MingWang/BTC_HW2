@@ -35,6 +35,6 @@ jobs:
         run: |
           git config --global user.name "Hung-MingWang"
           git config --global user.email "b12902019@csie.ntu.edu.tw"
-          git add data/mnav.db
+          git add data/mnav.db data/mnav.csv
           git commit -m "Update mNAV data" || echo "No changes"
           git push
