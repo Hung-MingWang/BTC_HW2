@@ -26,6 +26,9 @@ def repair_last_row():
     # Optional safety check
     if last_date != today:
         print("Warning: Last row is not today. Still replacing it.")
+        confirm = input("Last row is not today. Continue? (y/n): ")
+        if confirm != "y":
+            return
 
     # 3. Recompute values
     market_cap, net_debt = get_stock_data(TICKER)
